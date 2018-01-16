@@ -16,10 +16,15 @@ The main file is lsm_simln.c and 2 files for the functions used are spk_gen.c & 
 2. nmc_str.c: Creates the connectivity matrix for the LSM based neural micro circuit.
 
 lsm_simln.c: This simulates a network of N recurrently connected neurons. The header file (snn.h) has the network parameters which can be modified.
-   N: no. of neurons in the network.
+
+   N: no. of neurons in the network
+   
    simT: duration of simulation
+
    M: no. of time steps (simT/dt)
+   
    X,Y,Z: no. of neurons in each of the 3 directions within the NMC block.
+   
 
 To compile: gcc lsm_simln.c spk_gen.c nmc_str.c -lm -o lsm
 To run: ./lsm
