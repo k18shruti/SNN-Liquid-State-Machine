@@ -28,3 +28,6 @@ lsm_simln.c: This simulates a network of N recurrently connected neurons. The he
 
 To compile: gcc lsm_simln.c spk_gen.c nmc_str.c -lm -o lsm
 To run: ./lsm
+
+The run saves the input and output spikes in a .dat file
+It also prints out the time needed to simulate the complete network.
